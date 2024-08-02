@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>YATRAAHOLIC</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts -->
+    <link rel="stylesheet" href="font/fonts.css">
+    <!-- normalize css -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/food_style.css">
+    <style>
+        /* Style for food item cards */
+
+        /* Flexbox for food cards */
+        .post-bodycopy {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        /* Style for food item cards */
+        .food-card {
+            flex: 0 0 calc(33.333% - 20px);
+            /* Three cards per row with spacing */
+            margin-bottom: 20px;
+            /* Spacing between cards */
+            border: 1px solid #ccc;
+            /* Border style */
+            border-radius: 8px;
+            /* Rounded corners */
+            padding: 20px;
+            /* Padding inside the card */
+            transition: all 0.3s ease;
+            /* Smooth transition effect */
+            max-width: 300px;
+            /* Limit card width */
+        }
+
+        .food-card img {
+            max-width: 100%;
+            /* Make images responsive */
+            height: auto;
+            /* Prevent image distortion */
+            display: block;
+            /* Center images */
+            margin: auto;
+            /* Center images horizontally */
+        }
+
+        /* Hover effect */
+        .food-card:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            /* Add shadow on hover */
+            transform: translateY(-5px);
+            /* Move the card up slightly on hover */
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            .food-card {
+                flex-basis: calc(50% - 20px);
+                /* Two cards per row on smaller screens */
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .food-card {
+                flex-basis: 100%;
+                /* One card per row on even smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar  -->
+    <nav class="navbar">
+        <div class="container flex">
+            <a href="index.html" class="site-brand">
+                YATRAA<span>HOLIC</span>
+            </a>
+
+            <button type="button" id="navbar-show-btn" class="flex">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div id="navbar-collapse">
+                <button type="button" id="navbar-close-btn" class="flex">
+                    <i class="fas fa-times"></i>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="gallery.html" class="nav-link">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chaar_dham.html" class="nav-link">Chaar Dham</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="hotel.html" class="nav-link">Hotel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="Cities.html" class="nav-link">Cities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="food.html" class="nav-link">Food</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar  -->
+
+    <!-- header -->
+    <header class="flex header-sm">
+        <div class="container">
+            <div class="header-title">
+                <h1>Food</h1>
+                <p></p>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+
+    <div class="post-bodycopy cf">
+        <div class="myclass myclassTop" style="text-align: left; " align="center"><br>
+            <h2>The food of Uttarakhand is dominated by Garhwali cuisine and Kumaoni cuisine, two of its main
+                regions. The dishes are simple and locally grown without being dominated by complex spices.
+                Some of the most famous dishes of Uttarakhand are cooked over a slow fire and consists of
+                lentils.<br><br>Have a look at the scrumptious food of Uttarakhand hidden in this land of natural
+                beauty:</h2>
+        </div>
+
+        <!-- Kafuli -->
+        <div class="food-card">
+            <h2>1. Kafuli</h2>
+            <p>This dish is a boon for all the diet-conscious people out there. Yes, it is actually that nutritious.
+                Kafuli is a famous food of Uttarakhand prepared of Spinach and fenugreek leaves. This exotic dish is
+                prepared in an iron kadhai and complemented by hot steaming rice. It is the most nourishing and
+                health-conscious dish you will come across in the state.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/Kafuli.jpg" alt="Kafuli">
+        </div>
+
+        <!-- Bhang Ki Chutney -->
+        <div class="food-card">
+            <h2>2. Bhang Ki Chutney</h2>
+            <p>We are not kidding! There is chutney made in Uttarakhand that is actually bhang ki chutney. It simply
+                enhances the taste of every other cuisine and its fresh aroma and tangy taste will linger in your mouth
+                long after you have consumed it. It is prepared of Hemp Seeds which provides it with the characteristic
+                aroma. Already feel your mouth-watering?</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/bhaang-ki-chutney.jpg"
+                alt="Bhang Ki Chutney">
+        </div>
+
+        <!-- Garhwal ka Fannah -->
+        <div class="food-card">
+            <h2>3. Garhwal ka Fannah</h2>
+            <p>This heavenly Uttarakhand food is a staple of Mussoorie and is good enough to satiate both your eyes and
+                stomach. It happens to be one of those dishes that will simply leave you craving for more. Since it is
+                so divine in its taste and aroma, Garhwal Ka Fannah has become a must food item in the menu card for
+                every occasion that takes place in Uttarakhand.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/garhwal-fa-fannah.jpg"
+                alt="Garhwal ka Fannah">
+        </div>
+
+        <!-- Phaanu -->
+        <div class="food-card">
+            <h2>4. Phaanu</h2>
+            <p>Phaanu is a dish that is famous mostly in the Garhwal region of Uttarakhand. It is rather complicated to
+                prepare since it is made by mixing lentils of different varieties that are soaked in water overnight. It
+                is a kind of soupy dish, served mostly with rice. The unique flavour of Phaanu will definitely be a
+                treat for your taste buds!</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/phaanu.jpg" alt="Phaanu">
+        </div>
+
+        <!-- Baadi -->
+        <div class="food-card">
+            <h2>5. Baadi</h2>
+            <p>Baadi is a famous Uttarakhand food that has mesmerised the locals and tourists for a long time, mainly by
+                its lingering aroma and tangy taste. This dish is as simple as the people of Uttarakhand. It is
+                bequeathed with all the essential nutrients that are hard to find in one dish altogether. It is abundant
+                in Vitamin B12 and Vitamin A among others. What more can we ask for, when we get nutrients and taste in
+                a single delicacy!</p>
+            <img src="baadi2.jpg" alt="Baadi">
+        </div>
+
+        <!-- Kandalee Ka Saag -->
+        <div class="food-card">
+            <h2>6. Kandalee Ka Saag</h2>
+            <p>This food of Uttarakhand which is highly popular among visitors and tourists is none other than the
+                Kandalee Ka Saag. It is a green leafy vegetable prepared in an ordinary way like all the other
+                vegetables, but the leafy vegetable called “Bicchu Ghas” is what makes it different. Like all other
+                dishes of Uttarakhand, this too is rich in nutrients.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/kandalee-ka-saag.jpg"
+                alt="Kandalee Ka Saag">
+        </div>
+
+        <!-- Chainsoo -->
+        <div class="food-card">
+            <h2>7. Chainsoo</h2>
+            <p>If you have been to Uttarakhand you might have heard of Chainsoo. It is a very famous Garhwal dish which
+                is made of Urad or Kali Dal and thus consists of a lot of protein. Many people find it hard to digest,
+                but this dish has a totally earthy flavour which is definitely worth trying. It is tasty enough to give
+                a tough competition to Punjabi’s Maa Ki Dal!</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/chainsoo.jpg" alt="Chainsoo">
+        </div>
+
+        <!-- Kumaoni Raita -->
+        <div class="food-card">
+            <h2>8. Kumaoni Raita</h2>
+            <p>Like the Bhang ki Chutney, Kumaoni Raita is yet another dish that accompanies every other cuisine of
+                Uttarakhand. The locals of this state can’t do without Kumaoni Raita which is prepared from curd,
+                turmeric, and cucumber. The goodness of cucumber is an asset for your system, but the heavenly taste
+                beats it all.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/kumaoni-raita.jpg" alt="Kumaoni Raita">
+        </div>
+
+        <!-- Dubuk -->
+        <div class="food-card">
+            <h2>9. Dubuk</h2>
+            <p>Touted as one of the best dishes of Uttarakhand, Dubuk makes the people a fan by its indescribable taste.
+                It is a preparation of Dal and is best served with rice. You might think what’s so special about a
+                normal delicacy prepared of Dal. Well, Dubuk is here to change your perception. Though the suitable time
+                to eat Dubuk is during winters, who can stop you from savouring it all throughout the year.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/dubuk.jpg" alt="Dubuk">
+        </div>
+
+        <!-- Jhangora Ki Kheer -->
+        <div class="food-card">
+            <h2>10. Jhangora Ki Kheer</h2>
+            <p>When talking about delicacies how can we not mention the desserts! This is one famous sweet dish of
+                Uttarakhand. Jhangora is a type of millet that is the main ingredient of this dessert. Jhangora Ki Kheer
+                has an unforgettable taste and is a must-try after a heavy meal of the Garhwali cuisines. Its rich
+                texture and the goodness of milk will leave you asking for more.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/jhangora-ki-kheer.jpg"
+                alt="Jhangora Ki Kheer">
+        </div>
+
+        <!-- Gulgula -->
+        <div class="food-card">
+            <h2>11. Gulgula</h2>
+            <p>Yet another dish that is highly popular among tourists and visitors, Gulgula is a delectable sweet of
+                Uttarakhand. It is a sweet local snack made of jaggery which traces its origin to the Garhwal region.
+                This is a very common dish you will find in the State since it uses extremely basic ingredients that are
+                available in the immediate vicinity of the local people. Gulgula has eventually found its place in the
+                delicious desserts in many parts of Northern India.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/gulgula.jpg" alt="Gulgula">
+        </div>
+
+        <!-- Arsa -->
+        <div class="food-card">
+            <h2>12. Arsa</h2>
+            <p>Arsa is the most famous dessert in the Uttarakhand region. It has come to occupy a permanent place in
+                every household in the State. This sweet dish is high on the taste meter and low on the calorie meter
+                which makes it so hugely popular. No festival or occasion in Uttarakhand is complete without the
+                magnanimous presence of Arsa. Do we need to say more about this one?!</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/arsa.jpg" alt="Arsa">
+        </div>
+
+        <!-- Singori -->
+        <div class="food-card">
+            <h2>13. Singori</h2>
+            <p>Singori also called Singodi / Singauri is a widely known sweet dish in Uttarakhand that’s made with Khoa,
+                a dairy product of thickened milk which is wrapped in a Maalu leaf. It is a cone-shaped sweet savoury
+                that’s available in Almora the Kumaon region of Uttarakhand.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/09/Singori.jpg" alt="Singori">
+        </div>
+
+        <!-- Thhatwani/Ras -->
+        <div class="food-card">
+            <h2>14. Thhatwani/Ras</h2>
+            <p>A fine soup with a mix of rice paste, lentils stock and pulses that are cooked in an iron vessel. The
+                pulses are soaked in water overnight which is later boiled and cooked with herbs and masala in an iron
+                kadhai. This high in protein dish is best served with hot steamed rice.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/07/gulgula.jpg" alt="Thhatwani/Ras">
+        </div>
+
+        <!-- Aloo Gutuk -->
+        <div class="food-card">
+            <h2>15. Aloo Gutuk</h2>
+            <p>A typical Indian dish that’s made in every household, but it wouldn’t be an exaggeration if it came to be
+                called a regional food of Uttarakhand. Coupled with Bhang ki chutney, Pooris and Kamaoni Raita, this
+                dish will give your soul what it needs. An effortless dish of boiled potatoes garnished with coriander
+                and red chillies this dish is a must-try.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/09/aloo-tuk-recipe-1.jpg" alt="Aloo Gutuk">
+        </div>
+
+        <!-- Aloo ka Jhol -->
+        <div class="food-card">
+            <h2>16. Aloo ka Jhol</h2>
+            <p>Jhol means ‘thin gravy’ in Hindi. Aloo ka Jhol is a potato recipe served with pooris or chapatis that has
+                many variants. It is also called as Aloo rasedar, mathura ke dubki wale aloo, poori bhaji, poori masala
+                and so on.</p>
+            <img src="https://www.holidify.com/blog/wp-content/uploads/2016/09/AlooJhol.jpg" alt="Aloo ka Jhol">
+        </div>
+
+        <p style="text-align: justify;">So here is yet another reason to visit the land of natural beauty (as if you
+            needed one!). The next time you are in Uttarakhand, don’t miss out on these delectable cuisines, because as
+            we say “time and food waits for none”!</p>
+    </div>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: false,
+            dots: false,
+            autoplay: true,
+            slideTransition: 'linear',
+            autoplayTimeout: 4000,
+            autoplaySpeed: 4000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                768: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+    </script>
+
+
+
+    <!-- footer -->
+    <footer class="py-4">
+        <div class="container footer-row">
+            <div class="footer-item">
+                <a href="index.html" class="site-brand">
+                    YATRAA<span>HOLIC</span>
+                </a>
+                <p class="text"></p>
+            </div>
+
+            <div class="footer-item">
+                <h2>Follow us on: </h2>
+                <ul class="social-links">
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fab fa-google-plus"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-item">
+                <h2>Popular Places:</h2>
+                <ul>
+                    <li><a href="#">KEDARNATH</a></li>
+                    <li><a href="#">DEHRADHUN</a></li>
+                    <li><a href="#">YAMUNOTRI</a></li>
+                    <li><a href="#">GANGOTRI</a></li>
+                    <li><a href="#">RISHIKESH</a></li>
+                </ul>
+            </div>
+
+            <div class="subscribe-form footer-item">
+                <h2>Subscribe for Newsletter!</h2>
+                <form class="flex">
+                    <input type="email" placeholder="Enter Email" class="form-control">
+                    <input type="submit" class="btn" value="Subscribe">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <!-- end of footer -->
+
+    <!-- js -->
+    <script src="js/script.js"></script>
+    <script>
+        // image modal
+        const allGalleryItem = document.querySelectorAll('.gallery-item');
+        const imgModalDiv = document.getElementById('img-modal-box');
+        const modalCloseBtn = document.getElementById('modal-close-btn');
+        const nextBtn = document.getElementById('next-btn');
+        const prevBtn = document.getElementById('prev-btn');
+        let imgIndex = 0;
+
+        allGalleryItem.forEach((galleryItem) => {
+            galleryItem.addEventListener('click', () => {
+                imgModalDiv.style.display = "block";
+                let imgSrc = galleryItem.querySelector('img').src;
+                imgIndex = parseInt(imgSrc.split("-")[1].substring(0, 1));
+                showImageContent(imgIndex);
+            })
+        });
+
+        // next click
+        nextBtn.addEventListener('click', () => {
+            imgIndex++;
+            if (imgIndex > allGalleryItem.length) {
+                imgIndex = 1;
+            }
+            showImageContent(imgIndex);
+        });
+
+        // previous click
+        prevBtn.addEventListener('click', () => {
+            imgIndex--;
+            if (imgIndex <= 0) {
+                imgIndex = allGalleryItem.length;
+            }
+            showImageContent(imgIndex);
+        });
+
+        function showImageContent(index) {
+            imgModalDiv.querySelector('#img-modal img').src = `images/gallery-${index}.jpg`;
+        }
+
+        modalCloseBtn.addEventListener('click', () => {
+            imgModalDiv.style.display = "none";
+        })
+    </script>
+</body>
+
+</html>
